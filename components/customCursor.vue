@@ -7,40 +7,42 @@
   ></div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from "vue";
 
 onMounted(() => {
-  let cursor = document.querySelector(".firstCursor");
-  let cursorinner = document.querySelector(".secondCursor");
+  let cursor = document.querySelector<HTMLElement>(".firstCursor")!;
+  let cursorInner = document.querySelector<HTMLElement>(".secondCursor")!;
 
-  document.addEventListener("mousemove", function (e) {
+  if (!cursor || !cursorInner) return;
+
+  document.addEventListener("mousemove", (e: MouseEvent) => {
     cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
   });
 
-  document.addEventListener("mousemove", function (e) {
+  document.addEventListener("mousemove", (e: MouseEvent) => {
     let x = e.clientX;
     let y = e.clientY;
-    cursorinner.style.left = x + "px";
-    cursorinner.style.top = y + "px";
+    cursorInner.style.left = x + "px";
+    cursorInner.style.top = y + "px";
   });
 
-  document.addEventListener("mousedown", function () {
-    cursorinner.classList.add("cursorinnerhover");
+  document.addEventListener("mousedown", () => {
+    cursorInner.classList.add("cursorinnerhover");
   });
 
-  document.addEventListener("mouseup", function () {
-    cursorinner.classList.remove("cursorinnerhover");
+  document.addEventListener("mouseup", () => {
+    cursorInner.classList.remove("cursorinnerhover");
   });
 
-  document.addEventListener("mouseleave", function () {
+  document.addEventListener("mouseleave", () => {
     cursor.classList.add("out");
-    cursorinner.classList.add("out");
+    cursorInner.classList.add("out");
   });
 
-  document.addEventListener("mouseenter", function () {
+  document.addEventListener("mouseenter", () => {
     cursor.classList.remove("out");
-    cursorinner.classList.remove("out");
+    cursorInner.classList.remove("out");
   });
 });
 </script>
@@ -49,12 +51,10 @@ onMounted(() => {
 .firstCursor {
   transition: all 200ms ease-out;
   transform: translate(calc(-50% + 15px), -50%);
-
   &.out {
     opacity: 0;
   }
 }
-
 .secondCursor {
   transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s, opacity 0.3s;
@@ -63,7 +63,6 @@ onMounted(() => {
     opacity: 0;
   }
 }
-
 .cursorinnerhover {
   width: 50px;
   height: 50px;

@@ -36,8 +36,8 @@
     </section>
   </main>
 </template>
-<script setup>
-import { computed, onMounted } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
 import projectCard from "@/components/projectCard.vue";
 import projects from "@/data/projects.json";
 

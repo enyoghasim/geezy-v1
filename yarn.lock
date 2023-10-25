@@ -1150,6 +1150,10 @@
     "@sigstore/protobuf-specs" "^0.2.1"
     tuf-js "^2.1.0"
 
+"@studio-freight/lenis@studio-freight/lenis":
+  version "1.0.27"
+  resolved "https://codeload.github.com/studio-freight/lenis/tar.gz/f359368b1aeb2b5cc5ca5b750bcbb74b4122d4f3"
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
