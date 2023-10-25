@@ -1,17 +1,12 @@
 <template>
+  <CustomCursor />
   <Header />
   <slot />
   <Footer />
 </template>
 
-<script>
-import Footer from "@/components/footer.vue";
+<script setup>
 import Header from "@/components/header.vue";
-
-export default {
-  components: {
-    Footer,
-    Header,
-  },
-};
+import Footer from "@/components/footer.vue";
+import CustomCursor from "@/components/customCursor.vue";
 </script>

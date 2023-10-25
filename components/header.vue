@@ -34,14 +34,10 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "Header",
+<script setup>
+import { computed } from "vue";
 
-  computed: {
-    mailTo() {
-      return `mailto:${process.env.MY_EMAIL ?? ""}`;
-    },
-  },
-};
+const mailTo = computed(() => {
+  return `mailto:${process.env.MY_EMAIL ?? ""}`;
+}).value;
 </script>

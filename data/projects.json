@@ -1,0 +1,39 @@
+{
+  "currentlyLearning": [
+    {
+      "name": "Swift"
+    },
+    {
+      "name": "Docker"
+    }
+  ],
+  "inUse": [
+    {
+      "name": "React"
+    },
+    {
+      "name": "VueJs"
+    },
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "Tailwind"
+    },
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "Go"
+    }
+  ]
+}

@@ -4,9 +4,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk", "sans-serif";
+  cursor: none;
 
   &::-moz-selection {
-    /* Code for Firefox */
     background: #20c55e;
     color: #fff;
   }
