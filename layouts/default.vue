@@ -2,7 +2,7 @@
   <custom-cursor />
   <Header />
   <slot />
-  <ToolCard />
+  <!-- <ToolCard /> -->
   <Footer />
 </template>
 
