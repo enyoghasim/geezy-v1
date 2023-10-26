@@ -1,39 +1,9 @@
-{
-  "currentlyLearning": [
-    {
-      "name": "Swift"
-    },
-    {
-      "name": "Docker"
-    }
-  ],
-  "inUse": [
-    {
-      "name": "React"
-    },
-    {
-      "name": "VueJs"
-    },
-    {
-      "name": "Javascript"
-    },
-    {
-      "name": "Tailwind"
-    },
-    {
-      "name": "Typescript"
-    },
-    {
-      "name": "MongoDB"
-    },
-    {
-      "name": "Git"
-    },
-    {
-      "name": "Redis"
-    },
-    {
-      "name": "Go"
-    }
-  ]
-}
+[
+  {
+    "name": "Easytipster",
+    "link": "https://easytipster.com",
+    "stacks": ["Vuejs", "Nodejs", ""],
+    "description": "",
+    "imageUrl": ""
+  }
+]
