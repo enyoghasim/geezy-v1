@@ -2,6 +2,7 @@
   <custom-cursor />
   <Header />
   <slot />
+  <ToolCard />
   <Footer />
 </template>
 
@@ -10,6 +11,7 @@ import { onMounted } from "vue";
 import Lenis from "@studio-freight/lenis";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import ToolCard from "@/components/ToolCard.vue";
 import CustomCursor from "@/components/CustomCursor.vue";
 
 const scroll = () => {

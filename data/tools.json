@@ -18,13 +18,16 @@
       "name": "Javascript"
     },
     {
-      "name": "Tailwind"
-    },
-    {
       "name": "Typescript"
     },
     {
+      "name": "Tailwind"
+    },
+    {
       "name": "MongoDB"
+    },
+    {
+      "name": "MySQL"
     },
     {
       "name": "Git"
