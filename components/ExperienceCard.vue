@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white border-[7px] border-lightBlue flex flex-col w-full p-5">
+  <div
+    class="bg-white border-[7px] border-lightBlue flex flex-col w-full p-5 relative"
+  >
     <div
       class="flex flex-row bg-inherit text-[#1E1E1E] sm:text-lg text-base items-center"
     >

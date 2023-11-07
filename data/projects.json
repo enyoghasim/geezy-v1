@@ -4,6 +4,13 @@
     "link": "https://easytipster.com",
     "stacks": ["Vuejs", "Nodejs", ""],
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "https://ik.imagekit.io/enyoghasim/easytipster-web"
+  },
+  {
+    "name": "VetaCloud Docs",
+    "link": "https://docs.vetacloud.com",
+    "stacks": ["Vuejs"],
+    "description": "",
+    "imageUrl": "https://ik.imagekit.io/enyoghasim/vetacloud-web"
   }
 ]
