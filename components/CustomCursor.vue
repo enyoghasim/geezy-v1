@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-full out firstCursor pointer-events-none fixed z-50 w-10 h-10 left-0 top-0 bg-transparent border border-[#20c55e] lg:block hidden"
+    class="rounded-full out firstCursor pointer-events-none fixed z-[9999] w-10 h-10 left-0 top-0 bg-transparent border border-[#20c55e] lg:block hidden"
   ></div>
   <div
     class="rounded-full out secondCursor bg-lightBlue pointer-events-none fixed z-50 w-4 h-4 opacity-30 lg:block hidden"
