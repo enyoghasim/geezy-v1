@@ -1,3 +1,3 @@
 <template>
-  <div class="text-white">error</div>
+  <div class="text-white">404?</div>
 </template>
