@@ -1,6 +1,6 @@
 <template>
   <custom-cursor />
-  <!-- <Header /> -->
+  <Header />
   <slot />
   <Footer />
 </template>
@@ -8,9 +8,9 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import Lenis from "@studio-freight/lenis";
-// import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import CustomCursor from "@/components/CustomCursor.vue";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+import CustomCursor from "../components/CustomCursor.vue";
 
 const scroll = () => {
   const lenis = new Lenis({

@@ -33,5 +33,5 @@
   </footer>
 </template>
 <script setup lang="ts">
-import socials from "@/data/socials.json";
+import socials from "../data/socials.json";
 </script>
