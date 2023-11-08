@@ -36,11 +36,23 @@
     <section class="tools mt-10">
       <h3 class="font-semibold sm:text-3xl text-2xl">Tools</h3>
       <p class="sm:text-xl text-base max-w-[600px] mt-3">
-        My primary stack includes Typescript, Javascript and sometimes Go (i
-        wont say i'm proficient in it tho). I've compiled a list of the
+        My main stacks includes Typescript, Javascript and sometimes Go (I wont
+        say i'm proficient in it tho). I've compiled a list of the relevant
         languages and tools I've either used in the past or continue to use,
-        which you can find down.
+        which you can find below.
       </p>
+
+      <div class="flex flex-row gap-5 mt-3 flex-wrap">
+        <tool-card v-for="tool in toolsInUse" :name="tool.name" />
+      </div>
+      <div class="mt-3">
+        <p class="sm:text-xl text-base max-w-[600px]">
+          Other things I am currently learning/trying to get the hang of
+        </p>
+        <div class="flex flex-row gap-5 mt-3 flex-wrap">
+          <tool-card v-for="tool in toolsInLearning" :name="tool.name" />
+        </div>
+      </div>
     </section>
     <section class="projects mt-10">
       <h3 class="font-semibold sm:text-3xl text-2xl mb-4">Projects</h3>
@@ -89,15 +101,15 @@
         I can help you build your next dream product from ground up, or help you
         scale your existing product/project. Feel free to
         <a
-          href=""
+          :href="meetingLink"
           target="_blank"
           rel="noopener noreferrer"
           class="text-green-500"
           >schedule a quick call</a
         >
         with me or send me an email at
-        <a class="text-green-500">{{ myEmail }}</a> if you'd like to learn more
-        about my work.
+        <a class="text-green-500" :href="mailTo">{{ myEmail }}</a> if you'd like
+        to learn more
       </p>
     </section>
   </main>
@@ -106,6 +118,7 @@
 import { computed } from "vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import ExperienceCard from "@/components/ExperienceCard.vue";
+import ToolCard from "@/components/ToolCard.vue";
 import tools from "@/data/tools.json";
 import experiences from "@/data/experiences.json";
 import projects from "@/data/projects.json";
@@ -118,8 +131,16 @@ const myEmail = computed(() => {
   return process.env.MY_EMAIL ?? "";
 }).value;
 
+const meetingLink = computed(() => {
+  return process.env.SCHEDULE_MEETING_URL ?? "";
+}).value;
+
 const toolsInLearning = computed(() => {
   return tools?.currentlyLearning ?? [];
+}).value;
+
+const mailTo = computed(() => {
+  return `mailto:${process.env.MY_EMAIL ?? ""}`;
 }).value;
 </script>
 <style lang="scss"></style>

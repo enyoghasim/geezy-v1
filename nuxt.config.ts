@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "nuxt-svgo",
     [
       "@nuxtjs/google-fonts",
       {
@@ -24,4 +25,9 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  svgo: {
+    // componentPrefix: "i",
+    // autoImportPath: true,
+    autoImportPath: "./assets/icons/",
+  },
 });

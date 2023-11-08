@@ -4,7 +4,7 @@
       Open to Opportunities
     </div>
     <div
-      class="w-full max-w-[1200px] px-5 py-5 mx-auto flex flex-row justify-start sm:justify-between items-center"
+      class="w-full max-w-[1200px] px-5 py-5 mx-auto flex flex-row justify-between items-center"
     >
       <a href="#" class="text-lightBlue sm:text-3xl text-xl font-semibold"
         ><span class="font-firaCode">&#60;</span>David<span
@@ -12,7 +12,7 @@
           >/&#62;</span
         ></a
       >
-      <nav class="sm:block hidden">
+      <!-- <nav class="sm:block hidden">
         <ul class="flex flex-row items-center gap-4">
           <li>
             <a class="text-white font-medium text-xl">Projects</a>
@@ -24,10 +24,10 @@
             <a class="text-white font-medium text-xl">Experiences</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
       <a
         :href="mailTo"
-        class="font-medium text-xl text-lightBlue border-lightBlue border rounded-md px-4 py-2 sm:block hidden"
+        class="font-medium sm:text-xl text-sm text-lightBlue border-lightBlue border rounded-md sm:px-4 px-2 py-2"
         >Say Hello 👋</a
       >
     </div>
