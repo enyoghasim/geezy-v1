@@ -64,11 +64,11 @@
           :key="project.name"
           class="sm:w-[45%] w-full"
         >
-          <project-card
+          <!-- <project-card
             :image-url="project.imageUrl"
             :name="project.name"
             :link="project.link"
-          />
+          /> -->
         </div>
       </div>
     </section>
@@ -116,7 +116,7 @@
 </template>
 <script setup lang="ts">
 import { computed } from "vue";
-import ProjectCard from "@/components/ProjectCard.vue";
+// import ProjectCard from "@/components/ProjectCard.vue";
 import ExperienceCard from "@/components/ExperienceCard.vue";
 import ToolCard from "@/components/ToolCard.vue";
 import tools from "@/data/tools.json";
